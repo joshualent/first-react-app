@@ -1,0 +1,38 @@
+<!--*************
+NAME: Joshua Lent
+DATE: 8 OCT 2024
+PROJ: 6 JavaScript
+DESC: Music Ranker
+**************-->
+
+<!-- This is just a little thing I'm working on for fun but I thought I'd share it. I hope the React stuff works for now. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Favorite Albums</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <link rel="icon" type="image/x-icon" href="/images/music-icon.png">
+    
+</head>
+<body id="body" class="light-mode">
+    <div class="top-bar">
+    <p onclick="addUserName()">Hello, <span  class="user-name-span">User</span></p> 
+    <button onclick="changeBackgroundColor()" class="background-change-btn">Custom Background Color</button>
+    <div class="contrast-icon"><button class="icon-button" onclick="toggleDisplayMode()"><i class=""><svg height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m12 22c5.5228475 0 10-4.4771525 10-10s-4.4771525-10-10-10-10 4.4771525-10 10 4.4771525 10 10 10zm0-1.5v-17c4.6944204 0 8.5 3.80557963 8.5 8.5 0 4.6944204-3.8055796 8.5-8.5 8.5z" fill="#212121"/></svg></i></button></div>
+</div>
+    <div id="root">
+        <!--React app placed here-->
+    </div>
+
+    <script type="text/babel" src="/scripts/app.js">
+    </script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
